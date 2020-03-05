@@ -8,4 +8,9 @@ $(function(){
         // 마우스가 벗어났을 때
         $(".menu_open").stop().slideUp();
     });
+
+    $('.idx_slider').bxSlider({
+        auto: true,
+        mode: 'fade',
+        });
 });
