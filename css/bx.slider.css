@@ -1,0 +1,110 @@
+/* idx_slider */
+#container {
+    position: relative;
+    z-index: 1;
+}
+
+.idx_slider .item {
+    position: relative;
+    height: 850px;
+    width: 1900px;
+    margin: 0px auto;
+}
+
+.idx_slider .item1 {
+    background: url(/img/main/main_visual_01.jpg) no-repeat 0 0 /cover;
+}
+
+.idx_slider .item2 {
+    background: url(/img/main/main_visual_02.jpg) no-repeat 0 0 /cover;
+}
+
+.bx-controls .bx-has-controls-direction .bx-has-pager {
+    position: relative;
+}
+
+/* 슬라이드 텍스트 */
+
+.idx_slider .item > div {
+    position: absolute;
+    top: 300px;
+    left: 335px;
+}
+
+
+/* item1 텍스트스타일 */
+#container .item1 span {
+    font-size: 80px;
+    font-weight: 900;
+    color: #373737;
+    line-height: 70px;
+    font-family: 'Lato'; 
+}
+
+#container .item1 .t2,
+#container .item1 .t3 {
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+#container .item .t2 {
+    color: #0fabad;
+}
+
+#container .item .t3 {
+    color: #29b578;
+}
+
+/* item2 텍스트스타일 */
+
+#container .item .t1 {
+    font-size: 15px;
+    letter-spacing: 7px;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+#container .item2 span {
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 70px;
+    font-family: 'Lato'; 
+}
+
+/* 슬라이드 왼/오버튼 */
+.bx-controls-direction {
+    position: absolute;
+    bottom: -35px;
+    left: 17%;
+    width: auto;
+    height: 80px;
+    z-index: 9998;
+}
+
+.bx-controls-direction a {
+    background-color: red;
+    width: 95px;
+    height: 95px;
+    border-radius: 100px;
+    font-size: 60px;
+    cursor: pointer;
+    color: rgba(0,0,0,0);
+}
+
+.bx-controls-direction .bx-prev {
+    background: url(/img/icon/prev.png) no-repeat 45% 50% /80px;
+    width: 90px;
+    height: 95px;
+}
+
+.bx-controls-direction .bx-next {
+    background: url(/img/icon/next.png) no-repeat 55% 50% /80px;
+    margin-left: -30px;
+}
+
+.bx-pager-item{
+    display: none;
+}
+
+
