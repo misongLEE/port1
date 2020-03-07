@@ -13,6 +13,9 @@ header h1{
 
 .header_Wrap  {
     z-index: 50;
+    position: relative;
+    height: 100px;
+    clear: both;
 }
 
 .header_Wrap .menu_box img{
@@ -29,15 +32,14 @@ header h1{
 
 .menu_wrap:hover{
     transition: all 300ms ease;
-    background-color: #Fff;
+    background-color: #fff;
 }
 
 .menu_wrap .menu {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    z-index: 49;
-
+    position: relative;
+    height: 100px;
+    margin-left: 200px;
+    z-index: 101;
 }
 
 .menu_wrap .menu ul {
@@ -47,7 +49,7 @@ header h1{
 .menu_wrap .menu li {
     position: relative;
     display: inline-block;
-    width: 10%;
+    width: 140px;
     text-align: center;
     font-size: 15px;
     font-weight: 600;
@@ -87,22 +89,20 @@ header h1{
     top: 100px;
     left: 0;
     width: 100%;
-    margin: 0 auto;
+    padding-left: 200px;
+    box-sizing: border-box;
     background: #fff;
     border-top: 1px solid #aaa9a9;
     z-index: 100;
 }
 
 header .menu_wrap .menu_open .dep1 {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
     font-size: 0;
 }
 
 .menu_wrap .menu_open .dep1 > li {
     display: inline-block;
-    width: 10%;
+    width: 140px;
     font-size: 16px;
     padding: 20px 0 40px 0;
 }
@@ -121,6 +121,10 @@ header .menu_wrap .menu_open .dep1 {
 
 /* 1번째페이지 스크롤아이콘*/
 
+#container {
+    display: block;
+}
+
 #container .scroll {
     position: absolute;
     bottom: 50px;
@@ -130,12 +134,10 @@ header .menu_wrap .menu_open .dep1 {
     color: rgba(0,0,0,0);
     width: 13px;
     height: 208px;
-    z-index: 100;
+    z-index: 99;
 }
 
-
 /* 컨텐츠1 */
-
 .contents_area {
     max-width: 1700px;
     margin: 50px auto;
@@ -144,8 +146,8 @@ header .menu_wrap .menu_open .dep1 {
 /* 왼쪽컨텐츠 */
 .contents_area .left_contents {
     float: left;
-    width: 520px;
-    height: 600px;
+    width: 30%;
+    height: 700px;
     padding: 60px;
     box-sizing: border-box;
     color: #fff;
@@ -175,8 +177,8 @@ header .menu_wrap .menu_open .dep1 {
 /* 오른쪽 윗줄 첫번째,아랫줄 두번째 컨텐츠 */
 .contents_area .right_contents .image_item {
     float: left;
-    width: 820px;
-    height: 300px;
+    width: 48%;
+    height: 350px;
     background: url(/img/icon/main_con01_img04.jpg) no-repeat ;
 }
 
@@ -187,7 +189,7 @@ header .menu_wrap .menu_open .dep1 {
 }
 
 .contents_area .right_contents .cont4 {
-    background: url(/img/icon/main_con01_img05.jpg);
+    background: url(/img/icon/main_con01_img05.jpg) no-repeat;
 }
 
 
@@ -195,9 +197,8 @@ header .menu_wrap .menu_open .dep1 {
 
 .contents_area .right_contents .white_item {
     float: left;
-    width: 360px;
-    height: 300px;
-    background-color: blanchedalmond;
+    width: 22%;
+    height: 350px;
 }
 
 .contents_area .right_contents .white_item .txt strong {
@@ -232,4 +233,84 @@ header .menu_wrap .menu_open .dep1 {
 
 .contents_area .right_contents .cont3 .txt span {
     color: #29b578;
+}
+
+
+
+/* 세번째 컨텐츠 */
+
+#proecess_wrap {
+    max-width: 1700px;
+    margin: 50px auto;
+}
+
+#proecess_wrap .process{
+    text-align: center;
+}
+
+#proecess_wrap .process .txt {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+#proecess_wrap .process .txt strong{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#proecess_wrap .process .txt span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+#proecess_wrap .process .icon ul li{
+    display: inline-block;
+}
+
+#proecess_wrap .process .icon {
+    position: relative;
+    margin-top: 100px;
+}
+
+#proecess_wrap .process .icon::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:2px;
+    top: 105px;
+    left: 0;
+    background: #ddd;
+    z-index:60;
+}
+
+
+#proecess_wrap .process .icon .dot{
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 101px;
+    left: 100px;
+    border-radius: 50%;
+    background: red;
+    z-index:61;
+}
+
+#proecess_wrap .process ul li {
+    display: inline-block;
+    width: 20%;
+}
+
+#proecess_wrap .process .number{
+    font-size: 13px;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+#proecess_wrap .process .number_txt {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin-top: 8px;
 }
