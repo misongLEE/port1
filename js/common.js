@@ -13,4 +13,21 @@ $(function(){
         auto: true,
         mode: 'fade',
         });
+    });    
+
+    $(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 500) {
+                $('.wave.top_button').fadeIn();
+            } else {
+                $('.wave.top_button').fadeOut();
+            }
+        });
+
+    $('.wave .top_button ').click(function(){
+        $('html,body').animate({
+            scrollTop: 0
+        },400);    
+        return false;
+    });
 });
