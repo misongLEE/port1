@@ -15,7 +15,6 @@ header h1{
     z-index: 50;
     position: relative;
     height: 100px;
-    clear: both;
 }
 
 .header_Wrap .menu_box img{
@@ -181,6 +180,13 @@ header .menu_wrap .menu_open .dep1 {
 }
 
 /* 오른쪽 윗줄 첫번째,아랫줄 두번째 컨텐츠 */
+
+.contents_area .right_contents::after {
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
 .contents_area .right_contents .image_item {
     float: left;
     width: 48%;
@@ -247,7 +253,7 @@ header .menu_wrap .menu_open .dep1 {
 
 #proecess_wrap {
     max-width: 1700px;
-    margin: 50px auto;
+    margin: 150px auto;
 }
 
 #proecess_wrap .process{
@@ -263,11 +269,13 @@ header .menu_wrap .menu_open .dep1 {
 #proecess_wrap .process .txt strong{
     font-size: 30px;
     font-weight: 900;
+
 }
 
 #proecess_wrap .process .txt span {
     font-size: 15px;
     font-weight: 400;
+    margin-top: 15px;
 }
 
 #proecess_wrap .process .icon ul li{
@@ -342,13 +350,15 @@ header .menu_wrap .menu_open .dep1 {
 /* 컨텐츠4 : 왼쪽 컨텐츠 - 상담신청 */
 
 #advice {
+    position: relative;
     width: 100%;
     background-color: #f2f2f2;
+    padding-bottom: 110px;
 }
 
 #advice .advice_item {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 150px auto 0 auto;
 }
 #advice .advice_item::after{
     content: "";
@@ -370,7 +380,7 @@ header .menu_wrap .menu_open .dep1 {
 
 #advice .advice_item .info,
 #advice .advice_item .qna {
-    width: 49%;
+    width: 48%;
     box-sizing: border-box;
 }
 
@@ -382,7 +392,6 @@ border-bottom: 1px solid #a6a5a5;
     padding: 15px 0;
     color: #999;
     margin-top: 25px;
-
 }
 
 #advice .advice_item .info dt {
@@ -424,8 +433,14 @@ input::placeholder {
 
 /* 컨텐츠4 : 개인정보동의 */
 #advice .advice_item .privacy_agree {
-    height: 110px;
+    height: 90px;
     font-size: 14px;
+}
+
+#advice .advice_item .privacy_agree::after {
+    content : "";
+    display : block;
+    clear : both;
 }
 
 #advice .advice_item .privacy_agree .left{
@@ -483,14 +498,16 @@ input::placeholder {
 
 /* 컨텐츠4 : 오른쪽 컨텐츠 - 문의내용 */
 
-#advice .advice_item .qna {
+#advice .advice_item::after { 
+    content: ''; 
+    display: block; 
+    clear: both }
+
+#advice .qna {
+    float: right;
+    margin-left: 1%;
     margin-top: 25px;
     box-sizing: border-box;
-}
-
-#advice .advice_item .qna {
-    float: right;    
-    margin-left: 1%;
 }
 
 #advice .advice_item .qna dt {
@@ -501,7 +518,7 @@ input::placeholder {
 
 #advice .advice_item .qna textarea {
     width: 100%;
-    height: 280px;
+    height: 250px;
     border: 0;
     resize: none;
     margin-bottom: 20px;
@@ -522,9 +539,93 @@ textarea::placeholder {
     text-align: center;
     border: 0;
     padding: 20px 0;
+    cursor: pointer;
     background: #000;    
 }
 
-.wave {
-    background-image: url(../img/main/main_con_cm_bg.jpg) no-repeat 0 0 /cover;;
+
+/* wave */
+
+.wave .top_button a {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index:9999;
+    color: (0,0,0,0);
+    background: #222 url(/img/icon/top_arrow.png) no-repeat 50% 50% /25px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #fff;
+    max-width: 1700px;
+    margin: 50px auto;
+}
+
+footer .top {
+    font-size: 15px; 
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+footer .top a {
+    margin-left: 30px;
+}
+
+footer .top a:first-child {
+    margin-left: 0;
+    color: #0ba9b5;
+}
+
+footer .middle  {
+    font-size: 13px;
+    color: #222;
+}
+
+footer .middle > div {
+    display: inline-block;
+    margin-right: 200px;
+    vertical-align: top;
+}
+
+footer .middle h3 {
+    font-size: 15px;
+    color: #222;
+    letter-spacing: 0.25px;
+    margin-bottom: 35px;
+}
+
+footer .middle ul li {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+footer .middle ul li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    color: #aaa;
+    font-weight: 600;
+    padding-right: 0px;
+}
+
+
+footer .bottom {
+    margin-top: 40px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+footer .bottom span {
+    color: #0ba9b5;
+
 }
