@@ -13,7 +13,25 @@ $(function(){
         auto: true,
         mode: 'fade',
         });
-    });    
+    }); 
+    
+
+    /*소개 왼쪽 버튼 */
+    $('.intro_btn .left_btn').on('click',function(){
+        $('#intro_list > ul').prepend($('#intro_list>ul>li:last'))
+                             .css({marginLeft:"-384px"})
+                             .animate({marginLeft:"+"+"384px"},600);
+    });
+
+    $('.intro_btn .right_btn').on('click',function(){
+        $('#intro_list > ul').animate({marginLeft:"-"+"384px"},600,function(){        
+        $('#intro_list > ul').css({marginLeft:"0"})
+                             .append($('#intro_list>ul>li:first'))
+        });
+    });
+
+    setInterval(function(){$('.intro_btn .right_btn').click()},3000);
+    //커뮤니티 자동 슬라이드
 
     $(function(){
         $(window).scroll(function(){
