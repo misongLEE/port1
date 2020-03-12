@@ -139,7 +139,7 @@ header .menu_wrap .menu_open .dep1 {
 /* 컨텐츠1 */
 .contents_area {
     max-width: 1700px;
-    margin: 50px auto;
+    margin: 80px auto;
 }
 
 .contents_area::after {
@@ -249,7 +249,7 @@ header .menu_wrap .menu_open .dep1 {
 
 
 
-/* 컨텐츠2 : 개발제품소개 */
+/* 컨텐츠2 : 디자인프로세스 */
 
 #proecess_wrap {
     max-width: 1700px;
@@ -344,6 +344,42 @@ header .menu_wrap .menu_open .dep1 {
     font-weight: 600;
     letter-spacing: -2px;
     margin-top: 8px;
+}
+
+
+
+
+/* 컨텐츠3 : 개발제품소개 */
+
+#introduce_Wrap {
+    height: 500px;
+    width: 100%;
+    background-color: burlywood;
+    
+}
+#introduce_Wrap #introduce {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#introduce_Wrap #introduce h3 {
+    padding-left: 80px;
+}
+
+
+#introduce_Wrap #intro_list ul {
+    width: 3840px;
+    overflow: hidden;
+}
+#introduce_Wrap #intro_list ul li {
+    display: inline-block;
+    padding-left: 60px;
+    float: left;
+}
+
+#introduce_Wrap #intro_list ul li img{
+    width: 700px;
+    height: 350px;
 }
 
 
