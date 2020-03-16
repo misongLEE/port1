@@ -1,3 +1,6 @@
+body {
+    position: relative;;
+}
 header {
     position: relative;
     width: 100%;
@@ -253,7 +256,7 @@ header .menu_wrap .menu_open .dep1 {
 
 #proecess_wrap {
     max-width: 1700px;
-    margin: 150px auto;
+    margin: 200px auto 250px auto;
 }
 
 #proecess_wrap .process{
@@ -351,50 +354,98 @@ header .menu_wrap .menu_open .dep1 {
 
 /* 컨텐츠3 : 개발제품소개 */
 
-#introduce_Wrap {
-    height: 500px;
-    width: 100%;
-    background-color: burlywood;
-    
-}
-#introduce_Wrap #introduce {
-    width: 1100px;
+.intro_tit {
+    width: 940px;
     margin: 0 auto;
+    text-align: left;
+    letter-spacing: -1px;
+}
+.intro_tit .txt_1 {
+    color: #0ba9b5;
 }
 
-#introduce_Wrap #introduce h3 {
-    padding-left: 80px;
+.intro_tit .txt_2 {
+    color: #29b578;
+}
+
+.autoplay {
+    z-index: 9;
+}
+.autoplay .slide {
+    height: 500px;
+    margin: 20px 80px;
+    color: transparent;
+    font-size: 0;
+    box-sizing: border-box;
+
+}
+
+.autoplay .slide1{
+    background: url(/img/main/main_con03_img05.jpg) no-repeat 0 0 /1100px;
+}
+
+.autoplay .slide2{
+    background: url(/img/main/main_con03_img06.jpg) no-repeat 0 0 /1100px;
+}
+
+.autoplay .slide3{
+    background: url(/img/main/main_con03_img05.jpg)no-repeat 0 0 /1100px; 
+}
+
+.autoplay .slide4{
+    background: url(/img/main/main_con03_img01.jpg) no-repeat 0 0 /1100px;
+}
+
+.autoplay .slide5{
+    background: url(/img/main/main_con03_img06.jpg) no-repeat 0 0 /1100px;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    border:none;
+    z-index: 999;
+    color: transparent;
+}
+
+.slick-prev {
+    left:20%;
+    background: url(/img/icon/auto_left.png) no-repeat 0 0 /32px;
+    font-size:24px;
+}
+
+.slick-next { 
+    right: 16%;
+    background: url(/img/icon/auto_right.png) no-repeat 0 0 /32px;
+    font-size:24px;
+}
+
+.autoplay h3 {
+    background-color: red;
 }
 
 
-#introduce_Wrap #intro_list ul {
-    width: 3840px;
-    overflow: hidden;
-}
-#introduce_Wrap #intro_list ul li {
-    display: inline-block;
-    padding-left: 60px;
-    float: left;
-}
 
-#introduce_Wrap #intro_list ul li img{
-    width: 700px;
-    height: 350px;
-}
+
+
+
+
 
 
 /* 컨텐츠4 : 왼쪽 컨텐츠 - 상담신청 */
 
 #advice {
-    position: relative;
+    margin-top: -400px;
     width: 100%;
     background-color: #f2f2f2;
     padding-bottom: 110px;
+    z-index: 1;
+
 }
 
 #advice .advice_item {
     max-width: 1400px;
-    margin: 150px auto 0 auto;
+    margin: 250px auto 0 auto;
 }
 #advice .advice_item::after{
     content: "";
@@ -405,7 +456,7 @@ header .menu_wrap .menu_open .dep1 {
 #advice .advice_item h1 {
     text-align: center;
     letter-spacing: -1.5px;
-    padding: 100px 0 40px 0;
+    padding: 300px 0 40px 0;
 }
 
 #advice .advice_item .info {
@@ -663,5 +714,40 @@ footer .bottom {
 
 footer .bottom span {
     color: #0ba9b5;
-
 }
+
+
+.visual {
+    position: relative;
+}
+
+.visual button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.visual button.slick-prev {
+    left: 0;
+}
+
+.visual button.slick-next {
+    right: 0;
+}
+
+
+
+.visual button.slick-prev,
+.visual button.slick-next {
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+.visual .slick-slide slick-current slick-active
