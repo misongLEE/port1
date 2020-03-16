@@ -9,30 +9,28 @@ $(function(){
         $(".menu_open").stop().slideUp();
     });
 
+    // 메인슬라이드 //
     $('.idx_slider').bxSlider({
         auto: true,
         mode: 'fade',
         });
     }); 
-    
 
-    /*소개 왼쪽 버튼 */
-    $('.intro_btn .left_btn').on('click',function(){
-        $('#intro_list > ul').prepend($('#intro_list>ul>li:last'))
-                             .css({marginLeft:"-384px"})
-                             .animate({marginLeft:"+"+"384px"},600);
-    });
 
-    $('.intro_btn .right_btn').on('click',function(){
-        $('#intro_list > ul').animate({marginLeft:"-"+"384px"},600,function(){        
-        $('#intro_list > ul').css({marginLeft:"0"})
-                             .append($('#intro_list>ul>li:first'))
+    $('document').ready(function(){
+        $('.autoplay').slick({
+            slidesToShow: 1.65,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
         });
     });
 
-    setInterval(function(){$('.intro_btn .right_btn').click()},3000);
-    //커뮤니티 자동 슬라이드
+    $('.menu>ul>li').hover(function(){
+        (this).css({color: red});
+    });
 
+    // TOP버튼 //
     $(function(){
         $(window).scroll(function(){
             if ($(this).scrollTop() > 500) {
