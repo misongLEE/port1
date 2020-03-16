@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/bx.slider.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="/js/jquery-1.12.1.min.js"></script>
     <script src="/js/common.js"></script>
     <script src="/js/jquery.bxslider.js"></script>   
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <!-- 헤더 -->
@@ -204,29 +206,20 @@
     </div>
 
     <!-- 컨텐츠3 : 개발제품소개 -->
-    <div id="introduce_Wrap">
-        <section id="introduce">
-            <h3>DEVELOPMENT INTRODUCTION</h3>
-            <div class="intro_btn">
-                <button class="left_btn"> &lt; </button>
-                <button class="right_btn"> &gt;</button>
-            </div>
-            <div id="intro_list">
-                <ul>
-                    <li>
-                        <img src="/img/main/main_con03_img05.jpg" alt="1번사진">
-                    </li>
-                    <li>
-                        <img src="/img/main/main_con03_img01.jpg" alt="1번사진">
-                    </li>
-                    <li>
-                        <img src="/img/main/main_con03_img06.jpg" alt="1번사진">
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
+    <h3 class="intro_tit">
+        <span class="txt_1">D</span>EVELOPMENT <span class="txt_2">I</span>NTRODUCTION
+    </h3>
+    <section class="autoplay">
+        <div class="slide slide1">사진1
+            <h3>MADE BY DESIGN</h3>
+        </div>
+        <div class="slide slide2">사진2</div>
+        <div class="slide slide3">사진3</div>
+        <div class="slide slide4">사진4</div>
+        <div class="slide slide5">사진5</div>
+    </section>
 
+    
     <!-- 컨텐츠4 : 상담신청 -->
     <div id="advice">
         <!-- 컨텐츠4 : 왼쪽 컨텐츠 -->
@@ -285,7 +278,7 @@
         </div>
     </div>
     <!-- 물결배경화면 -->
-    <div class="wave"><img src="/img/main/main_con_cm_bg.jpg" alt="물결배경화면">
+    <div class="wave"><img src="../img/main/main_con_cm_bg.jpg" alt="물결배경화면">
         <div class="top_button">
             <a href="#"></a>
         </div>
